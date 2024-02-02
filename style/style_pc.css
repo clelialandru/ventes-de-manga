@@ -1,0 +1,312 @@
+/*****************************************************************************************************************************/
+/***                                                 Style de base du site                                                 ***/
+/*****************************************************************************************************************************/
+@media (min-width:431px) {
+
+    header {
+        width: 100vw;
+        height: 5.0625rem;
+        flex-shrink: 0;
+        position: fixed;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 10% 70% 5%;
+        column-gap: 5%;
+        align-items: center;
+        z-index: 5;
+        opacity: 0.95;
+    }
+
+    header>#menu {
+        margin-left: auto;
+    }
+
+    header>p {
+        color: black;
+        opacity: 1;
+        margin: 0 auto;
+    }
+
+    footer {
+        padding: 2%;
+        background-color: var(--footer);
+        margin-top: 5vh;
+        position: relative;
+        bottom: 0;
+    }
+
+    .ouvert {
+        transform: translateX(-0%);
+
+    }
+
+    nav {
+        right: auto;
+    }
+
+    nav {
+        position: fixed;
+        top: 12vh;
+        left: auto;
+        bottom: 0;
+        right: 1vw;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        max-width: 25vw;
+        max-height: fit-content;
+        background: var(--images-fond);
+        transition: 0.4s;
+        transform: translateX(150%);
+        z-index: 5;
+        opacity: 1;
+    }
+
+    .lien_menu:any-link::before {
+        content: '';
+        position: absolute;
+        width: 1vw;
+        height: 1.9vh;
+        margin: auto;
+        z-index: -1;
+        background-color: var(--prim_3);
+        color: white;
+        padding-right: var(--taille);
+        padding-bottom: 1%;
+        left: 30px;
+        transform: scaleX(1%);
+        transform-origin: center left;
+    }
+
+    .lien_menu:hover::before {
+        transform: scaleX(100%);
+        transition: 0.2s;
+    }
+
+    /*****************************************************************************************************************************/
+    /***                                      Style des différents titres présents sur le site                                 ***/
+    /*****************************************************************************************************************************/
+
+    h2 {
+        font-size: 2.3125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-left: 5vw;
+        z-index: 2;
+        font-family: manga;
+    }
+
+    h2:before {
+        content: '';
+        position: absolute;
+        width: 1vw;
+        height: 1vh;
+        margin: auto;
+        z-index: -1;
+        background-color: var(--prim_1);
+        color: white;
+        padding-right: 5%;
+        padding-bottom: 2.5%;
+        left: 40px;
+    }
+
+    /*****************************************************************************************************************************/
+    /***                      Style de la landing page, image de fond + organisation du texte pour le site                     ***/
+    /*****************************************************************************************************************************/
+
+
+    .landing {
+        background-image: url("../svg/landing.svg");
+        min-height: 100vh;
+        min-width: 100vw;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: anime;
+        position: relative;
+    }
+
+    .landing {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /*****************************************************************************************************************************/
+    /***                                                     Texte du site                                                     ***/
+    /*****************************************************************************************************************************/
+
+    .text {
+        width: 90.3125rem;
+        height: 20.1875rem;
+        font-size: 5.3125rem;
+    }
+
+    .texte_site {
+        font-size: 1.5rem;
+        max-width: 50vw;
+    }
+
+
+    /*****************************************************************************************************************************/
+    /***                                       Images de fond des différents graphiques                                        ***/
+    /*****************************************************************************************************************************/
+
+
+    .marche_monde {
+        background-image: url("../svg/classement_2023.svg");
+        min-height: 89vh;
+        min-width: 100vw;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .trim {
+        background-image: url('../svg/one_piece.svg');
+        min-height: 100vh;
+        min-width: 100vw;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pourcentage {
+        background-image: url('../svg/ed_draken.svg');
+        min-height: 100vh;
+        min-width: 100vw;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .liste_mangas {
+        background-image: url('../svg/bonde.svg');
+        min-height: 50vh;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .class_2023 {
+        background-image: url('../svg/bachi.svg');
+        min-height: 100vh;
+        min-width: 100vw;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .tt_tmps {
+        background-image: url('../svg/luffy.svg');
+        min-height: 100vh;
+        min-width: 100vw;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .graph7 {
+        background-image: url('../svg/silly_gojo.svg');
+        min-height: 100vh;
+        min-width: 100vw;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*****************************************************************************************************************************/
+    /***                                       Espace pour séparer catégories du site                                          ***/
+    /*****************************************************************************************************************************/
+
+    .space_5 {
+        padding: 2.5vh;
+    }
+
+    /*****************************************************************************************************************************/
+    /***                                              Style de la barre de scroll                                              ***/
+    /*****************************************************************************************************************************/
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+
+    ::-webkit-scrollbar-track {
+        background: var(--bg);
+    }
+
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--txt);
+        border-radius: 10px;
+    }
+
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--prim_2);
+        box-shadow: 0 2px 20px var(--prim_2);
+        transition: 0.2s;
+    }
+
+    /*****************************************************************************************************************************/
+    /***                                              Hover couvertures de mangas                                              ***/
+    /*****************************************************************************************************************************/
+
+    .plus_mal::before {
+        content: "+";
+        position: absolute;
+        z-index: 2;
+        background-color: var(--prim_1);
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        border-radius: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-top: 4vh;
+        margin-left: .5vw;
+        margin-right: .5vw;
+        transform-origin: bottom center;
+        transform: scaleX(0%);
+        opacity: 80%;
+    }
+
+    .plus_mal:hover::before {
+        transform: scaleX(100%);
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .plus::before {
+        content: "+";
+        position: absolute;
+        z-index: 2;
+        background-color: var(--prim_1);
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        border-radius: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 7vh;
+        margin-left: .5vw;
+        margin-right: .5vw;
+        transform-origin: bottom center;
+        transform: scaleX(0%);
+        opacity: 80%;
+    }
+
+    .plus:hover::before {
+        transform: scaleX(100%);
+        transition: .3s;
+        cursor: pointer;
+    }
+}

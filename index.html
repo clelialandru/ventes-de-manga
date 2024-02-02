@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE303 - Ventes de manga</title>
+    <link rel="stylesheet" href="style/style_commun.css">
+    <link rel="stylesheet" href="style/style_pc.css">
+    <link rel="stylesheet" href="style/animations.css">
+    <link rel="stylesheet" href="style/graphiques.css">
+    <link rel="stylesheet" href="style/pop_up_man.css">
+    <link rel="stylesheet" href="style/style_mobile.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+
+
+<body>
+    <nav>
+        <p><a href="#marche_monde" onclick="menu()" class="lien_menu" style="--taille:40%">Marché dans le monde</a></p>
+        <p><a href="#trimestre" onclick="menu()" class="lien_menu" style="--taille:55%">Diminution des ventes en
+                2023</a>
+        </p>
+        <p><a href="#pourcentage" onclick="menu()" class="lien_menu" style="--taille:75%">Rapport des achats de livres
+                et de
+                mangas</a></p>
+        <p><a href="#meilleurs_pays_2019" onclick="menu()" class="lien_menu" style="--taille:80%">Mangas les plus
+                populaires
+                dans certains
+                pays</a></p>
+        <p><a href="#classement_mangas" onclick="menu()" class="lien_menu" style="--taille:70%">Classement des mangas
+                les
+                plus vendus</a></p>
+        <p><a href="#meilleurs_manga_mal" onclick="menu()" class="lien_menu" style="--taille:60%">Top des mangas sur
+                MyAnimeList</a></p>
+    </nav>
+    <header>
+        <a href="#"><img src="svg/header.svg"></a>
+        <p>SAE303 - Ventes de manga dans le monde</p>
+        <div id="menu">
+            <img src="svg/menu.svg" width="30%" id="menu" onclick="menu()">
+        </div>
+
+    </header>
+    <div class="landing">
+        <div></div>
+        <h1 class="text">Ventes<br> de <span class="s_manga">manga</span> dans<br> le <span class="s_monde">monde</span>
+        </h1>
+        <div></div>
+    </div>
+
+    <main>
+        <div class="space_5" id="space_51"></div>
+
+        <div class="texte_site">
+            <p>Les mangas prennent de plus en plus d'importance dans le monde,
+                en effet, leurs ventes sont de plus en plus nombreuse dans le
+                monde entier.</p>
+        </div>
+
+        <!----------------------------------------------------------------->
+        <!--             Parts de marché dans le monde sur les           -->
+        <!--                         ventes de manga                     -->
+        <!----------------------------------------------------------------->
+
+        <div class="marche_monde" id="marche_monde">
+            <h2>Marché dans le monde</h2>
+            <p class="texte_site">Le Japon représente à lui seul <span class="mon_value_jp"></span> du marché mondial,
+                la
+                France et les
+                Etats-Unis ne représentant quant à eux que 1/4 chacun de cette valeur.</p>
+            <div class="space_5"></div>
+
+            <!----------------------------------------------------------------->
+            <!--                     Hover du graphique 1                    -->
+            <!----------------------------------------------------------------->
+
+            <div class="graph1_hover">
+                <p class="texte_site">
+                    <span>
+                        Naviguez sur le graphique pour plus de détails
+                    </span>
+                </p>
+            </div>
+
+            <!----------------------------------------------------------------->
+            <!--                     Légende & graphique                     -->
+            <!----------------------------------------------------------------->
+
+            <div class="flex_legende">
+                <div class="graph1" id="graphique_tt"></div>
+                <div class="legende">
+                    <h4>Légende :</h4>
+                    <div class="graph1_legende"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space_5"></div>
+
+        <!----------------------------------------------------------------->
+        <!--             Comparaison entre les ventes au 1er             -->
+        <!--                   trim 2022 et 1er trim 2023                -->
+        <!----------------------------------------------------------------->
+        <div class="trim" id="trimestre">
+            <h2>Diminution des ventes sur le 1er trimestre 2023</h2>
+            <div class="texte_site">
+                <p>Cependant, en France entre 2022 et 2023, nous constatons une diminution de 25% des ventes. Cela peut
+                    être dû à cause de l'inflation touchant le monde, causant l'augmentation du prix des mangas en
+                    librairies.</p>
+            </div>
+
+            <!----------------------------------------------------------------->
+            <!--                     Hover du graphique 2                    -->
+            <!----------------------------------------------------------------->
+
+            <div class="graph2_hover">
+                <p class="texte_site">
+                    <span>
+                        Naviguez sur le graphique pour plus de détails
+                    </span>
+                </p>
+            </div>
+
+            <!----------------------------------------------------------------->
+            <!--                     Légende & graphique                     -->
+            <!----------------------------------------------------------------->
+
+            <div class="flex_legende">
+                <div class="graph2"></div>
+                <div class="legende">
+                    <h4>Légende :</h4>
+                    <div class="graph2_legende"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space_5"></div>
+
+        <!----------------------------------------------------------------->
+        <!--             Rapport entre mangas et autres livres           -->
+        <!--               vendus en France en librairies                -->
+        <!----------------------------------------------------------------->
+        <div class="pourcentage" id="pourcentage">
+            <h2>Rapport des achats de livres et de mangas</h2>
+            <div class="texte_site">
+                <p>En France, selon certaines librairies, il y a, pour 100 livres vendus, 28 mangas achetés.
+                    Représentant un peu moins d'un tiers des ventes.<br>Cela revient à une part considérable des ventes
+                    en librairies. Les autres livres vendus étant des romans, des bandes dessinées, des livres
+                    documentaires, etc.</p>
+            </div>
+
+            <!----------------------------------------------------------------->
+            <!--                     Hover du graphique 3                    -->
+            <!----------------------------------------------------------------->
+
+            <div class="graph3_hover">
+                <p class="texte_site">
+                    <span>
+                        Naviguez sur le graphique pour plus de détails
+                    </span>
+                </p>
+            </div>
+
+            <!----------------------------------------------------------------->
+            <!--                     Légende & graphique                     -->
+            <!----------------------------------------------------------------->
+
+            <div class="flex_legende">
+                <div class="graph3"></div>
+                <div class="legende">
+                    <h4>Légende :</h4>
+                    <div class="graph3_legende"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space_5"></div>
+
+        <!----------------------------------------------------------------->
+        <!--             Classement des mangas les plus vendus           -->
+        <!--                         dans certains pays                  -->
+        <!----------------------------------------------------------------->
+
+        <div class="meilleurs_pays_2019" id="meilleurs_pays_2019">
+            <div class="liste_mangas">
+                <h2>Les mangas les mieux vendus dans certains pays</h2>
+                <div class="texte_site">
+                    <p>En 2019, un bilan est sorti par <a href="http://www.kleefeldoncomics.com"
+                            target="_blank">Kleefeld on
+                            comics</a> montre les différents mangas suivants les plus appréciés dans certains pays.</p>
+
+                    <div class="space_5"></div>
+
+                    <!----------------------------------------------------------------->
+                    <!--                      Graphique numéro 4                     -->
+                    <!----------------------------------------------------------------->
+
+                    <div class="graph4"></div>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------->
+            <!--                      Pop up infos manga                     -->
+            <!----------------------------------------------------------------->
+
+            <div class="popup_man">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="space_5"></div>
+
+        <!----------------------------------------------------------------->
+        <!--             Classement des mangas les plus vendus           -->
+        <!----------------------------------------------------------------->
+
+        <div class="class2023" id="classement_mangas">
+            <h2>Classement des mangas les plus vendus</h2>
+            <div class="texte_site">
+                <p>Sélectionnez le classement que vous voulez voir apparaitre ci-dessous</p>
+                <!----------------------------------------------------------------->
+                <!--                  Création formulaire filtre                 -->
+                <!----------------------------------------------------------------->
+
+                <form>
+                    <div class="filtre">
+                        <div>
+                            <label>
+                                <input type="radio" name="classement" value="tt_tmps">
+                                <span>Classement de tous les temps</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="classement" value="class_2023">
+                                <span>Classement 2023 au Japon</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="graph5">
+
+                    <!----------------------------------------------------------------->
+                    <!--                 Classement tout temps mangas                -->
+                    <!----------------------------------------------------------------->
+
+                    <div class="tt_tmps">
+
+                        <div class="texte_site">
+                            <h3>Top 3 des mangas les plus vendus de tous les temps, dans le monde entier :</h3>
+                        </div>
+
+                        <!----------------------------------------------------------------->
+                        <!--             Top 3 mangas les plus vendus tt temps           -->
+                        <!----------------------------------------------------------------->
+
+                        <div class="logos_t"></div>
+
+                        <div class="texte_site">
+                            <h3>Top 10 des mangas les plus vendus de tous les temps :</h3>
+                        </div>
+
+                        <!----------------------------------------------------------------->
+                        <!--                     Légende & graphique                     -->
+                        <!----------------------------------------------------------------->
+
+                        <div class="flex_legende_c">
+
+                            <div class="graphique_t"></div>
+
+                            <!----------------------------------------------------------------->
+                            <!--                     Hover du graphique 5                    -->
+                            <!----------------------------------------------------------------->
+
+                            <div class="graph5_hover">
+                                <p class="texte_site">
+                                    <span>
+                                        Naviguez sur le graphique pour plus de détails
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!----------------------------------------------------------------->
+                    <!--                      Classement 2023 manga                  -->
+                    <!----------------------------------------------------------------->
+
+                    <div class="class_2023">
+                        <div class="texte_site">
+                            <h3>Top 3 des ventes au Japon en 2023 :</h3>
+                        </div>
+                        <!----------------------------------------------------------------->
+                        <!--               Top 3 mangas les plus vendus 2023             -->
+                        <!----------------------------------------------------------------->
+                        <div class="logos"></div>
+
+                        <div class="texte_site">
+                            <h3>Top 10 des mangas les plus vendus au Japon en 2023 :</h3>
+                        </div>
+
+                        <!----------------------------------------------------------------->
+                        <!--                     Légende & graphique                     -->
+                        <!----------------------------------------------------------------->
+
+                        <div class="flex_legende_c">
+
+                            <div class="graphique"></div>
+
+                            <!----------------------------------------------------------------->
+                            <!--                     Hover du graphique 6                    -->
+                            <!----------------------------------------------------------------->
+
+                            <div class="graph6_hover">
+                                <p class="texte_site">
+                                    <span>
+                                        Naviguez sur le graphique pour plus de détails
+                                    </span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space_5"></div>
+
+            </div>
+        </div>
+
+        <!----------------------------------------------------------------->
+        <!--            Mangas les mieux notés sur MyAnimeList           -->
+        <!----------------------------------------------------------------->
+        <div class="meilleurs_mang_mal" id="meilleurs_manga_mal">
+            <h2>Top des mangas MyAnimeList</h2>
+            <div class="texte_site">
+                <p><a href="https://myanimelist.net" target="_blank">MyAnimeList</a>, souvent abrégé en MAL, est un site
+                    web d'application de catalogage social et de
+                    réseautage social sur le thème des anime et des mangas. Ce site permet de voter pour ses œuvres
+                    favorites, les mettant en valeur dans un top.</p>
+                <h3>Top 10 des mangas sur MyAnimeList :</h3>
+                <p class="texte_site">
+                    <span class="color_ch">Cliquez sur les couvertures afin d'obtenir plus d'infomations
+                        ci-dessous :</span>
+                </p>
+                <div class="popup_man_mal" id="pop_up_mal">
+                    <div></div>
+                </div>
+                <div class="space_5"></div>
+                <div class="graph7" id="graphique_n_7"></div>
+            </div>
+
+        </div>
+        <div class="space_5"></div>
+        <div class="space_5"></div>
+        <div class="space_5"></div>
+        <div class="space_5"></div>
+    </main>
+    <footer>
+        © Clélia LANDRU
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/pop_man.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/filtre.js"></script>
+    <script src="js/svg_crea.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,53 @@
+/*****************************************************************************************************************************/
+/***                                    Animation diagramme en barres verticales                                           ***/
+/*****************************************************************************************************************************/
+
+@keyframes growBars {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+        opacity: 1;
+    }
+}
+
+
+/*****************************************************************************************************************************/
+/***                                    Animation diagramme en barres horizontales                                         ***/
+/*****************************************************************************************************************************/
+
+@keyframes growBarsH {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+.graph1_c rect,
+.graph2_c rect {
+    opacity: 0;
+    transform-origin: bottom center;
+    animation: growBars 1.5s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-delay: 0.3s;
+}
+
+.graph5_c rect,
+.graph6_c rect {
+    opacity: 0;
+    animation: growBarsH 2s ease-out;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-delay: 0.5s;
+}
